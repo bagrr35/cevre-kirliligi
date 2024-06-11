@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import os
+import random
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -26,7 +27,9 @@ async def hayır(ctx):
 async def su(ctx):
     await ctx.send("Su kirliliği, istenmeyen zararlı maddelerin, suyun niteliğini ölçülebilecek oranda bozmalarını sağlayacak miktar ve yoğunlukta suya karışma olayıdır. Konutlar, endüstri kuruluşları, termik santraller, gübreler, kimyasal mücadele ilaçları (pestisitler), tarımsal sanayi atık suları, nükleer santrallerden çıkan sıcak sular ve toprak erozyonu gibi süreçler ve maddeler su kirliliğini meydana getiren başlıca kaynaklardır. Bunların hepsi doğrudan doğruya veya dolaylı olarak canlı ve cansız varlıklara zarar vermektedir.")
 
-    with open('images/su.jpg', 'rb') as f:
+    s = random.choice("image/su.jpg", "image/su1.jpg", "image./su2.jpg", "image/su3.jpg")
+
+    with open(s, 'rb') as f:
         picture = discord.File(f)
     await ctx.send(file = picture)
 
@@ -34,7 +37,9 @@ async def su(ctx):
 async def hava(ctx):
     await ctx.send("Atmosferde duman, toz ve saf olmayan su buharı şeklinde bulunabilecek kirleticilerin, insanlar ve diğer canlılar ile eşyaya zarar verebilecek miktarlara yükselmesi Hava kirliliği olarak nitelenmektedir. Havayı kirleten maddelerin sınır değerleri (havada zararlı olmayacak derecedeki en yüksek değerleri), her ülkenin ilgili kuruluşları tarafından yönetmeliklerle belirlenir. Kirletici maddelerin niteliğine göre, canlılara vereceği zarar şekil ve dereceleri de değişir. Hava kirliliğine karşı alınabilecek önlemler, kirlilik kaynağına göre (fabrika, termik santral, konutlar, taşıt araçları) çok çeşitlidir. Bu önlemler başta eğitim alınmak üzere teknik, hukuksal önlemler olmak üzere başlıca 3 grupta toplanabilir. Birçok ülkenin hava kirliliğinin sınırı vardır fakat gelişmiş ülkeler bu sınırı aşmakta ve aşmaya devam ediyor.")
 
-    with open('images/hava.jpg', 'rb') as f:
+    h = random.choice("image/hava.jpg", "image/hava1.jpg", "image./hava2.jpg", "image/hava3.jpg")
+
+    with open(h, 'rb') as f:
         picture = discord.File(f)
     await ctx.send(file = picture)
 
@@ -42,7 +47,9 @@ async def hava(ctx):
 async def toprak(ctx):
     await ctx.send("Toprağın kimyasal maddelerle veya atıklarla kirlenmesidir. Toprak kirlenmesi, hava ve suları kirleten maddeler tarafından meydana getirilebilir. Örneğin, kükürt dioksit oranı yüksek olan bir atmosfer tabakasından geçen yağmur damlacıkları asit yağmuru hâlinde toprağa geçer. Toprak içine giren bu asitli sular ağaç köklerini, bitkisel ve hayvansal toprak canlılarını zarara uğratır. Toprağın reaksiyonunu etkileyerek besin maddesi dengesini bozar, yeraltı sularını içilmez hâle getirir. Aynı şekilde çöp yığınlarından toprağa sızan sular, kirli sulama suları, gübre çözeltileri, radyoaktif maddeler, uçucu küller, ağır metaller, kükürt dioksit sanayi atıkları toprağı kirleten madde ve kaynaklardır.")
 
-    with open('images/toprak.jpg', 'rb') as f:
+    t = random.choice("image/toprak.jpg", "image/toprak1.jpg", "image./toprak2.jpg", "image/toprak3.jpg")
+
+    with open(t, 'rb') as f:
         picture = discord.File(f)
     await ctx.send(file = picture)
 
@@ -50,7 +57,9 @@ async def toprak(ctx):
 async def ses(ctx):
     await ctx.send("Yoğun şehir yaşamında özellikle insanların istirahat vakitlerinde yayılan motorlu araç, makina sesleri, inşaat, eğlence, bazı dinî-sosyal aktiviteler, maçlar ses kirliliğini oluşturan bazı gürültü kaynaklarına örnek olarak verilebilir. Ses kirliliğinden dolayı insanlar ve hayvanlar rahatsız olur. Bu nedenle fabrikalar, hava alanları vb. mekanları şehirden uzak yerlere yapılmalıdır.")
 
-    with open('images/ses.jpg', 'rb') as f:
+    se = random.choice("image/ses.jpg", "image/ses1.jpg", "image./ses2.jpg", "image/ses3.jpg")
+
+    with open(se, 'rb') as f:
         picture = discord.File(f)
     await ctx.send(file = picture)
 
@@ -58,7 +67,9 @@ async def ses(ctx):
 async def ışık(ctx):
     await ctx.send("Işık kirliliğinin sebepleri lazerler ve gereksiz aydınlatmalardır. Işık kirliliği gece havada aşırı aydınlık oluşmasıdır. Aşırı aydınlık canlılara zarar vermektedir. Örneğin;Deniz kaplumbağaları yumurtadan çıktıklarında denizin üzerindeki Ay yansımasını ararlar ama aşırı aydınlatmalardan dolayı bir kısmı ayın yansımasını ayırt edemez sonuç olarak açlıktan veya avlanmaktan dolayı ölürler.Kuşlar uçarken aya göre yön bulurlar. Ama aşırı aydınlatmalardan dolayı hangisinin ay olduğunu bilemezler ve göç edemeyip ölürler.Gereksiz aydınlatmanın diğer etkileri:Yeryüzündeki teleskoplar gök cisimlerini gözlemleyemez.")
 
-    with open('images/ışık.jpg', 'rb') as f:
+    ı = random.choice("image/ışık.jpg", "image/ışık1.jpg", "image./ışık2.jpg", "image/ışık3.jpg")
+
+    with open(ı, 'rb') as f:
         picture = discord.File(f)
     await ctx.send(file = picture)
 
